@@ -162,7 +162,7 @@ function fxDTSBrick::playSoundDirection(%obj, %soundDB, %coneVectorData, %coneSe
 }
 
 
-package Event_playAudioDirectionm
+package Event_playAudioDirection
 {
 	function fxDTSBrick::onDeath (%obj)
 	{
