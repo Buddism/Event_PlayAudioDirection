@@ -59,13 +59,13 @@ function fxDTSBrick::setMusicDirection(%obj, %musicDB, %coneVectorData, %coneSet
 		useProfileDescription = 0;
 
 		coneVector 		   = %coneVector;
-		coneInsideAngle    = mClamp(%CIA , 0  , 360);
-		coneOutsideAngle   = mClamp(%COA , 0  , 360);
-		coneOutsideVolume  = mClampF(%COV, 0.0, 3.0);
+		coneInsideAngle    = mClampF(%CIA , 0  , 360);
+		coneOutsideAngle   = mClampF(%COA , 0  , 360);
+		coneOutsideVolume  = mClampF(%COV, 0.0, 5.0);
 
-		ReferenceDistance  = mClampF(%refDist, 0.0, 128.0);
-		maxDistance 	   = mClampF(%maxDist, 0.0, 128.0);
-		volume 			   = mClampF(%volume , 0.0, 3.0  );
+		ReferenceDistance  = mClampF(%refDist, 0.0, 512.0);
+		maxDistance 	   = mClampF(%maxDist, 0.0, 512.0);
+		volume 			   = mClampF(%volume , 0.0, 5.0  );
 
 
 		isLooping = %desc.isLooping;
